@@ -1,0 +1,93 @@
+
+<!--  Declare the document as HTML5 -->
+<!DOCTYPE html>
+
+<!-- Defines the root of the HTML document, with language set to English -->
+<html lang="en">
+
+<!-- Head contains metadata and resources used by the browser but not visible on the webpage -->
+<head>
+
+    <meta charset="UTF-8">
+
+    <!--Ensures responsive design for different screen sizes, like mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Sets the title shown in the browser tab for the page.-->
+    <title>Payroll Management System</title>
+
+    <!--Links an external CSS file to style the webpage.-->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <!-- Main header of the web page -->
+    <h1>Payroll Management System</h1>
+
+    <!-- Section for Adding a New Employee -->
+    <h2>Add New Employee</h2>
+
+    <!-- Employee form for inputting new employee details -->
+    <form id="employeeForm">
+
+        <!-- Input for employee name -->
+        <input type="text" id="name" name="name" placeholder="Name" required>
+
+        <!-- Input for base salary -->
+        <input type="number" id="baseSalary" name="baseSalary" placeholder="Base Salary" required>
+
+        <!-- Input for address (optional) -->
+        <input type="text" id="address" name="address" placeholder="Address">
+        
+        <!-- Input for role -->
+        <input type="text" id="role" name="role" placeholder="Role" required>
+       
+        <!-- Button to submit the form and add the employee -->
+        <button type="submit">Add Employee</button>
+
+    <!-- Div to display messages like "Employee added successfully" or error messages -->
+    <div id="message"></div>
+
+
+
+
+
+    <!-- Button to Get All Employees -->
+    <h2>View All Employees</h2>
+
+    <!-- Button to load and display all employee records -->
+    <button id="loadEmployees">Load Employees</button> 
+
+    <!-- Div to display the list of all employees -->
+    <div id="employeesList"></div> 
+
+
+
+
+
+    <!-- Form to Get a Specific Employee by ID -->
+    <h2>Get Employee by ID</h2>
+    <!-- Form for getting details of a specific employee by their ID -->
+    <form id="getEmployeeForm"> 
+        <!-- Input field for employee ID, required -->
+        <input type="number" id="employeeID" name="employeeID" placeholder="Employee ID" required> 
+        <!-- Button to submit the form to get a specific employee's details -->
+        <button type="submit">Get Employee</button> 
+    </form>
+    <div id="specificEmployee"></div> <!-- Div to display details of the specific employee -->
+
+
+
+
+
+
+    </form>
+
+    <!-- Link to JavaScript file for adding interactivity to the form -->
+    <script src="app.js"></script>
+
+</body>
+
+</html>
