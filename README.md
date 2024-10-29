@@ -4,17 +4,19 @@ A RESTful API built with Flask and SQLite that manages employee payroll informat
 
 ## Features
 
-- CRUD operations for employee management
-- SQLite database integration for data persistence
-  
-RESTful API endpoints for:
+Backend (Flask/SQLite)
 
-- Adding new employees
-- Retrieving employee records
-- Updating employee information
-- Removing employees from the system
-
+RESTful API endpoints for employee management (CRUD operations)
+SQLite database integration for data persistence
 CORS enabled for frontend integration
-Error handling for data validation
+Error handling and data validation
 
-Tech Stack: Python/Flask, SQLite, Flask-CORS
+Frontend (JavaScript)
+
+Interactive web interface for employee management
+Real-time form handling for adding new employees
+Dynamic employee data loading and display
+Error handling with user feedback
+Responsive message system for operation status
+
+Tech Stack: Python/Flask, SQLite, Flask-CORS, HTML/CSS, Vanilla JavaScript, Fetch API for HTTP requests
